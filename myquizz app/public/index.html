@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Online Quiz</title>
+    <link rel="stylesheet" href="cs.css">
+    <script src="normal.js">
+     
+    </script>
+</head>
+<body>
+    
+        <div class="header">
+            <h1>Welcome to Online Quiz</h1>
+        </div>
+        <div class="container">
+            <div class="quiz-container">
+                <h4>The external JavaScript file must contain the &lt;script&gt; tag.</h4>
+                <label>
+                            <input type="radio" name="que1" value="false" >False
+                 </label>
+                <label>
+                        <input type="radio" name="que1" value="true" id="q1">True
+                </label>
+                  
+            </div>
+            <div class="quiz-container">
+                    <h4>Which of these are illegal to declare a variable.</h4>
+                    <label>
+                                <input type="radio" name="que2" value="num" >number
+                     </label>
+                     <label>
+                            <input type="radio" name="que2" value="$num" >$number
+                 </label>
+                 <label>
+                        <input type="radio" name="que2" value="1num" id="q2" >1number
+             </label>
+             <label>
+                    <input type="radio" name="que2" value="_num" >_number
+         </label>
+                    
+                      
+            </div>
+            <div class="quiz-container">
+                         <h4>what will be store in var x=3*4-2</h4>
+                        <label>
+                                    <input type="radio" name="que3" value="10" id="q3" >10
+                         </label>
+                         <label>
+                                <input type="radio" name="que3" value="6" >6
+                     </label>
+                     <label>
+                            <input type="radio" name="que3" value="4" >4
+                 </label>
+                 <label>
+                        <input type="radio" name="que3" value="11" >11
+             </label>
+                       
+                          
+            </div> 
+            <div class="quiz-container">
+                    <h4>What will be the total length of this array (var arra=[2,4,6,8,10,12,14];)</h4>
+                    <label>
+                                <input type="radio" name="que4" value="8" >8
+                     </label>
+                     <label>
+                            <input type="radio" name="que4" value="7" id="q4" >7
+                 </label>
+                 <label>
+                        <input type="radio" name="que4" value="6" >6
+             </label>
+             <label>
+                    <input type="radio" name="que4" value="5" >5
+         </label>
+ 
+                      
+            </div>
+            <div class="quiz-container">
+                    <h4>what is the correct way to write alert box</h4>
+                    <label>
+                                <input type="radio" name="que5" value="al" >alrt()
+                     </label>
+                     <label>
+                            <input type="radio" name="que5" value="ala" >alart()
+                 </label>
+                 <label>
+                        <input type="radio" name="que5" value="alert" id="q5" >alert()
+             </label>
+             <label>
+                    <input type="radio" name="que5" value="alt" >alert
+         </label>
+                      
+            </div>
+           <button onclick="myFunction()">submit</button>
+           
+           
+           <div  class="result">
+               <div class="res">
+                   <h2>Result</h2>
+                     <p>Correct :  <span id="demo"></span> out of 5 </p>
+                     <p>Percentage :  <span id="demo1"></span> </p>
+
+               </div>
+
+               
+           </div>
+    </div>
+   
+    
+</body>
+</html>

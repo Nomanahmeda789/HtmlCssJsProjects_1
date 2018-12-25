@@ -1,0 +1,58 @@
+ 
+    body{
+        margin:0px;
+        counter-reset: mycounter;
+        
+    }
+   
+    .header{
+        width: 100%;
+    /* border: 1px solid red; */
+        
+     }
+     h1{
+         
+        background-color:#ffcd77;
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 2em;
+         margin: 0px;
+         padding: 20px;
+         text-align: center;
+         color: white;
+         text-shadow: 2px 2px 2px black;
+
+     }
+     .container{
+         width: 67%;
+         /* border: 1px solid red; */
+         height: auto;
+         margin: 0px auto;
+     }
+     .quiz-container{
+         width: 94%;
+         border: 1px solid pink;
+         height: 190px;
+         margin: 20px 0px 20px 0px;
+         background-color: lightgrey;
+         padding: 20px;
+     }
+     h4::before{
+         counter-increment: mycounter;
+         content:"Q" counter(mycounter) ".";
+     }
+     label{
+         display: block;
+         margin: 5px;
+         font-size: 1.2em;
+     }
+     input{
+         margin-right: 7px;
+     }
+     button{
+         padding: 10px 20px 10px 20px;
+         color:white;
+         background-color: #ffcd77;
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 1.3em;
+         outline: none;
+     }

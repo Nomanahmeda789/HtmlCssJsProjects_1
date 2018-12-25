@@ -1,0 +1,578 @@
+body{
+    color: white;
+    overflow-x: hidden;
+}
+nav1{
+    height:150px;
+}
+div ul li a{
+    color: white;
+    text-align: center;
+
+}
+div ul li a:hover{
+    color: gray;
+
+
+}
+div ul li {
+    margin:0px 7px;
+}
+
+.brandlogo
+{
+    color:white;
+}
+
+.j-logo , .a-logo{
+    font-family:'Galada';
+    font-size:1.2em;
+    text-shadow:2px 2px 1px gray;
+}
+.header1{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 700px;
+    
+}
+.header2{
+    background-image: url("./images/4.jpg");
+    height:700px;
+    background-size: 100% 800px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.logo-heading{
+    
+    padding-top:160px;
+    font-size: 7.5em;
+    
+}
+.logo-heading b{
+    text-shadow:2px 2px 2px white;
+}
+.logo-subheading{
+    color: white;
+    font-size:2.2em;
+    font-weight:bolder;
+    line-height: 5px;
+    word-spacing: 40px;
+}
+.logo-text{
+    color: white;
+    line-height: 40px;
+    word-spacing: 3px;
+    letter-spacing: 5px;
+}
+.icon-image{
+    height: 70px;
+    margin-top: 219px;
+/* border: 1px solid red; */
+}
+
+.icon1 ul{
+    list-style: none;
+    text-align: center;
+    margin-top: 10px;
+    /* border: 1px solid red; */
+    width:300px;
+    margin: 0px auto;
+}
+
+.icon1 ul li{
+        margin: 0px 10px;
+        display: inline;
+        /* border: 1px solid red; */
+        
+}
+
+.icon1 ul li img{
+    border-radius: 50px;
+       
+}
+
+.common{
+    width:48px;
+    height:48px;
+    /* border: 1px solid red; */
+    background-image: url('images/11.png');
+}
+  .twt{
+    background-position: 0px 0px;
+}
+.twt:hover{
+    background-position: 0px 48px;
+}
+
+.fb{
+    background-position: -48px 0px;
+}
+.fb:hover{
+    background-position: -48px 48px;
+}
+.in{
+    background-position: -240px 0px;
+}
+.in:hover{
+    background-position: -240px 48px;
+}
+.mcontent{
+    height: 600px;
+    background-image: url('./images/z1 (12).jpg');
+    background-size: 100% 600px;
+}
+.ser{
+    font-size:2.3em;
+    /* border: 1px solid red; */
+    text-align: center;
+    padding-top: 90px;
+}
+.row1{
+    height: 400px;
+
+}
+.bor{
+    border: 3px solid white;
+    border-radius:130px;
+    width:150px;
+    height: 150px;
+    padding: 30px 0px 0px 35px;
+    margin: 40px auto;
+}
+.col1{
+    font-size: 1.5em;
+    /* border: 1px solid red; */
+    width:50%;
+    margin: -20px auto 0px auto;
+    text-align: center;
+}
+.col2{
+    /* border: 1px solid red; */
+    width: 56%;
+    margin: 10px auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+.work{
+    /* border: 1px solid red; */
+    width:50%;
+    color:gray;
+    opacity: 0.9;
+    text-align: center;
+    margin: 0px auto;
+    
+}
+.pic-1{
+    background-color: black;
+}
+.im1{
+    /* border: 1px solid red; */
+    padding:0px;
+}
+.im1 a:hover{
+    opacity:0.4;
+    transition: 0.5s;
+}
+.im1 a:hover~div{
+    display: block;
+}
+.visi{
+    position: absolute;
+    bottom: 90px;
+    color:lightgoldenrodyellow;
+    display: none;
+    /* border: 1px solid red; */
+}
+.visi p{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    /* border:1px solid blue; */
+}
+.img-col{
+    height: 840px
+}
+.aboutus{
+    background-image: url('./images/a19.jpg');
+    height:700px;
+    background-size: 100% 700px;
+    background-color: gray;
+}
+.about{
+    margin:0px auto;
+    width:60%;
+}
+.abo{
+    margin-top:-20px;
+}
+.about1{
+    /* border: 1px solid red; */
+    height: 490px;
+    background-color: whitesmoke;
+    margin-top: 130px ;
+}
+.para{
+    /* border:1px solid red; */
+    width:75%;
+    color: gray;
+    text-align: center;
+    margin: 30px auto ;
+}
+.blank-1{
+    background-image: url('./images/z1 (3).jpg');
+    height:700px;
+    background-repeat: no-repeat;
+    background-size: 100% 700px;
+    background-attachment: fixed;
+}
+.aboutus1{
+    background-image: url('./images/z1 (14).jpg');
+    height:930px;
+    background-size: 100% 930px;
+    background-color: gray;
+}
+.about11{
+    /* border: 1px solid red; */
+    height: 550px;
+    background-color: whitesmoke;
+    margin-top: 130px ;
+}
+.car-img{
+    display: block;
+    /* border: 1px solid red; */
+    margin: 0px auto;
+    padding-top: 58px;
+}
+.mar{
+    margin-top:-10px;
+    height:560px;
+  
+}
+input{
+    width: 250px;
+    height: 32px;
+    outline: none;
+    color: gray;
+    padding: 10px;
+}
+.t-1{
+    margin: 10px 10px 0px 10px;
+    /* border: 1px solid red; */
+    padding: 0px 60px;
+    height: 50px;
+}
+.find1{
+    width:67%;
+}
+.open1{
+    font-size: 12px;
+}
+textarea{
+    width: 250px;
+    
+    outline: none;
+    color: gray;
+    padding: 10px;
+    resize: none;
+    
+
+}
+.t-2{
+    height: 140px;
+}
+.footer{
+    height: 150px;
+}
+.footer1{
+    /* border:1px solid red; */
+    width: 50%;
+    padding-top:90px;
+    margin: auto;
+    text-align: center;
+}
+
+@media (min-width:992px){
+      .visi{
+          bottom: 55px;
+      }
+      input{
+        width: 200px;
+     }
+     textarea{
+         width: 200px;
+     }
+}
+
+@media (min-width:768px) and (max-width:991px){
+    .aboutus{
+        background-image: url('./images/a19.jpg');
+        height:850px;
+        background-size: 100% 850px;
+        background-color: gray;
+    }
+    /* .row1{
+        width: 600px;
+        margin-left:-50px ;
+    } */
+    .col2{
+        /* border: 1px solid red; */
+        width: 80%;
+        font-size: 0.9em;
+    }
+    .img-col{
+        height: 650px;
+    }
+    .visi{
+        font-size: 0.8em;
+        bottom: 30px;
+    }
+    .aboutus{
+        background-image: url('./images/a19.jpg');
+        height:700px;
+        background-size: 100% 700px;
+        background-color: gray;
+    }
+    .about{
+        margin:0px auto;
+        width:100%;
+     }  
+        
+     .about1{
+            /* border: 1px solid red; */
+            height: 460px;
+     }
+     .find1{
+        width: 100%;
+    
+    }
+    .mar{
+        height: 570px;
+    }
+    .aboutus1{
+        background-image: url('./images/z1 (14).jpg');
+        height:970px;
+        background-size: 100% 970px;
+        background-color: gray;
+    }
+    input{
+       width: 250px;
+    }
+    textarea{
+        width: 250px;
+    }
+    .footer1{
+        font-size: 0.8em;
+        /* border: 1px solid red; */
+        width:80%;
+    }
+}
+
+@media (min-width:575px) and (max-width:767px){
+    .aboutus{
+        background-image: url('./images/a19.jpg');
+        height:850px;
+        background-size: 100% 850px;
+        background-color: gray;
+    }
+    .row1{
+        width: 600px;
+        margin-left:-50px ;
+    }
+    .col2{
+        /* border: 1px solid red; */
+        width: 80%;
+        font-size: 0.9em;
+    }
+    .img-col{
+        height: 600px;
+    }
+    .visi{
+        font-size: 0.6em;
+        bottom: 30px;
+    }
+    .aboutus{
+        background-image: url('./images/a19.jpg');
+        height:850px;
+        background-size: 100% 850px;
+        background-color: gray;
+    }
+    .about{
+        margin:0px auto;
+        width:100%;
+     }  
+        
+     .about1{
+            /* border: 1px solid red; */
+            height: 600px;
+     }
+     .find1{
+        width: 100%;
+    
+    }
+    .mar{
+        height: 850px;
+    }
+    .aboutus1{
+        background-image: url('./images/z1 (14).jpg');
+        height:1200px;
+        background-size: 100% 1200px;
+        background-color: gray;
+    }
+    input{
+       width: 380px;
+    }
+    textarea{
+        width: 380px;
+    }
+    .footer1{
+        font-size: 0.8em;
+        /* border: 1px solid red; */
+        width:80%;
+    }
+}
+@media (min-width:480px) and (max-width:574px){
+    .mcontent{
+        height: 1200px;
+        background-image: url('./images/z1 (12).jpg');
+        background-size: 100% 1200px;
+        background-repeat: no-repeat;
+    }
+    .img-col{
+        height: 50%;
+        margin-bottom: 50px;
+    }
+    .aboutus{
+        background-image: url('./images/aaa.jpg');
+        height:850px;
+        background-size: 100% 850px;
+        background-color: gray;
+    }
+    .about{
+        margin:0px auto;
+        width:100%;
+     }  
+        
+     .about1{
+            /* border: 1px solid red; */
+            height: 600px;
+     }
+     .find1{
+        width: 100%;
+    
+    }
+    .mar{
+        height: 850px;
+    }
+    .aboutus1{
+        background-image: url('./images/z1 (14).jpg');
+        height:1200px;
+        background-size: 100% 1200px;
+        background-color: gray;
+    }
+    input{
+       width: 300px;
+    }
+    textarea{
+        width: 300px;
+    }
+    .footer1{
+        font-size: 0.8em;
+        /* border: 1px solid red; */
+        width:80%;
+    } 
+}
+
+@media (max-width:479px){
+    .logo-heading{
+    
+        padding-top:160px;
+        font-size: 5.3em;
+        
+    }
+    
+    .logo-subheading{
+        color: white;
+        font-size:1.7em;
+        font-weight:bolder;
+        line-height: 5px;
+        word-spacing: 10px;
+    }
+    .logo-text{
+        color: white;
+        line-height: 40px;
+        word-spacing: 2px;
+        letter-spacing: 2px;
+        font-size: 0.7em;
+    }
+    .icon1 ul{
+        list-style: none;
+        text-align: center;
+        margin-top: 70px;
+        /* border: 1px solid red; */
+        width:130%;
+        margin-left: -60px;
+    }
+    .mcontent{
+        height: 1200px;
+        background-image: url('./images/z1 (12).jpg');
+        background-size: 100% 1200px;
+        background-repeat: no-repeat;
+    }
+    .img-col{
+        
+        height: 50%;
+        margin-bottom: 50px;
+    }
+    .work{
+        font-size: 0.8em;
+    }
+    .visi{
+      bottom:45px;
+    }
+    .aboutus{
+        background-image: url('./images/a19.jpg');
+        height:750px;
+        background-size: 100% 750px;
+        background-color: gray;
+    }
+    
+    .about{
+    margin:0px auto;
+    width:100%;
+    }  
+    
+    .about1{
+        /* border: 1px solid red; */
+        height: 500px;
+    }
+    .paraa{
+        display: none;
+    }
+    .find1{
+        width: 100%;
+    
+    }
+    .mar{
+        height: 850px;
+    }
+    .aboutus1{
+        background-image: url('./images/z1 (14).jpg');
+        height:1200px;
+        background-size: 100% 1200px;
+        background-color: gray;
+    }
+    input{
+       width: 200px;
+    }
+    textarea{
+        width: 200px;
+    }
+    .footer1{
+        font-size: 0.8em;
+        /* border: 1px solid red; */
+        width:80%;
+    }
+}

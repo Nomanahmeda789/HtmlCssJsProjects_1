@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styl.css" type="text/css">
+
+    <title>Assignment 21 to 42</title>
+</head>
+<body>
+    <div class="container-fluid bg-dark" style="height:95px;">
+         <h1 class="text-danger text-center heading" >Javascript Assignment</h1>
+         <p class="text-light text-center ">Ch # 21 to 42</p>
+    </div>
+    <div class="container jumbotron jump">
+         <div id="accordion">
+              <div class="card">
+                   <div class="card-header">
+                        <a href="#chp21" data-toggle="collapse" class="card-link"> 
+                             <h1 class="text-primary h1-jump">Chapter : 21 to 25</h1>
+                        </a>
+                    </div>
+                    <div id="chp21" class="collapse" data-parent="#accordion">
+                          <div class="card-body">
+                              <!--q1-->
+                           <p> Q 1. Write a program that takes two user inputs for first and last
+                                name using prompt and merge them in a new variable titled
+                                fullName. Greet the user using his full name.</p>
+                            <pre>
+                                <code>
+                                    var first_name=prompt("Enter your First name :");
+                                    var last_name=prompt("Enter your Last name :");
+                                    var fullName=first_name + last_name;
+                                    alert(fullName);
+                                </code>
+                            </pre>
+                            <!--q2-->
+                            <p> Q 2.Write a program to take a user input about his favorite mobile
+                                    phone model. Find and display the length of user input in your
+                                    browser.</p>
+                                <pre>
+                                    <code>
+                                    var mobile=prompt("Enter your Favourite Mobile phone model :");
+                                    var length_of_mbl=mobile.length;
+                                    alert("Lenght of String is :" + length_of_mbl);
+                                    </code>
+                                </pre>
+                                <!--q3-->
+                                <p> Q 3. Write a program to find the index of letter “n” in the word
+                                        “Pakistani” and display the result in your browser.</p>
+                                <pre>
+                                    <code>
+                                    var pak="Pakistani";
+                                    var index=pak.indexOf("n");
+                                    alert("Index of : " +index);
+                                    </code>
+                                </pre>
+                               <!--q4-->
+                               <p> Q 4. Write a program to find the last index of letter “l” in the word
+                                    “Hello World” and display the result in your browser.</p>
+                                <pre>
+                                    <code>
+                                    var str="Hello World";
+                                    var index=str.lastIndexOf("l");
+                                    alert("Last index : "+index);
+                                    </code>
+                                </pre>
+                                <!--q5-->
+                               <p> Q 5. Write a program to find the character at 3rd index in the word
+                                    “Pakistani” and display the result in your browser.</p>
+                                <pre>
+                                    <code>
+                                    var str="Pakistani";
+                                    var chr=str.charAt(3);
+                                    alert("Character at 3rd index is :"+chr);    
+                                    </code>
+                                </pre>
+                                
+                                <!--q6-->
+                               <p> Q 6.Write a program to replace the “Hyder” to “Islam” in the word
+                                    “Hyderabad” and display the result in your browser.</p>
+                                <pre>
+                                    <code>
+                                    var city="Hyderabad";
+                                    var new_city=city.replace("Hyder","Islam");
+                                    alert("After replacement :" +new_city); 
+                                    </code>
+                                </pre>
+                                  <!--q7-->
+                               <p> Q 7. Write a program to replace all occurrences of “and” in the
+                                    string with “&amp;” and display the result in your browser.
+                                   <br> <b> var message = “Ali and Sami are best friends. They play cricket and football together.”;</b></p>
+                                <pre>
+                                    <code>
+                                    var message = “Ali and Sami are best friends. They play cricket and football together.”;
+                                    var new_msg=message.replace(/and/g,"&amp;");
+                                    alert(new_msg)
+                                    </code>
+                                </pre>
+                                    <!--q8-->
+                               <p> Q 8. Write a program that converts a string “472” to a number 472.
+                                    Display the values and types in your browser.</p>
+                                <pre>
+                                    <code>
+                                    var str="472";
+                                    var num=parseInt(str);
+                                    alert("value : "+str);
+                                    alert("type  : "+typeof(str));
+                                    alert("value : "+num);
+                                    alert("type  : "+typeof(num));
+                                   
+                                    </code>
+                                </pre>
+                                 <!--q9-->
+                               <p> Q 9. Write a program that take a URL as user input in the
+                                    following format: (www.facebook.com / www.yahoo.com ).
+                                    Extract the domain name and show in your browser.</p>
+                                <pre>
+                                    <code>
+                                    var str="www.facebook.com";
+                                    var str1=str.slice(4);
+                                    alert("URL : "+str);
+                                    alert("Domain :"+str1);
+                                    </code>
+                                </pre>
+                                    <!--q10-->
+                               <p> Q 10.Write a program that takes user input. Convert and show the
+                                    input in capital letters.</p>
+                                <pre>
+                                    <code>
+                                    var inp=prompt("Enter your favourite dry fruit :");
+                                    var out=inp.toUpperCase();
+                                    alert("Upper Case : "+out)
+                                    </code>
+                                </pre>
+                                 <!--q11-->
+                               <p> Q 11.Write a program that takes user input. Convert and show the
+                                    input in small letters.</p>
+                                <pre>
+                                    <code>
+                                    var inp=prompt("Enter your favourite dry fruit :");
+                                    var out=inp.toLowerCase();
+                                    alert("Lower Case : "+out)
+                                    </code>
+                                </pre>
+                               <!--q12-->
+                               <p> Q Write a program that converts the variable num to string.
+                                   <br> <b> var num = 35.36 ;</b> <br>
+                                   Remove the dot to display “3536” display in your browser.</p>
+                                <pre>
+                                    <code>
+                                    var num= 35.36;
+                                    var str=num.toString();
+                                    for(var i=0;i&lt;str.length;i++){
+                                        if(str[i]==="."){
+                                        var str1=str.slice(0,i)+str.slice(i+1);
+                                          }
+                                    }
+                                    alert("Number :" +num);
+                                    alert("Result :" +str1);
+                                    </code>
+                                </pre>
+                                <!--q13-->
+                               <p> Q 13.Write a program to take user input and store username in a
+                                    variable. If the username contains any special symbol among
+                                    [@ . , !], prompt the user to enter a valid username.</p>
+                                 <pre>
+                                     <code>
+                                    var username=prompt("Enter your name:");
+                                    var count=0;
+                                    for(var i=0;i &lt; username.length;i++){
+                                    if(username[i]==="!" || username[i]==="." || username[i]==="," || username[i]==="@" )
+                                           {
+                                             count++;
+                                           }
+                                    }
+                                    if(count==0){
+                                            alert("Thanks for your response");
+                                    }
+                                    else{
+                                           alert("plz enter a valid username");
+                                    } 
+                                    </code>
+                                 </pre>
+                                  <!--q14-->
+                               <p> Q 14.Write a program to take two input strings. Using string
+                                    comparison, tell which string is greater than other or if they
+                                    both are equal</p>
+                                 <pre>
+                                     <code>
+                                    var a1=prompt("Enter string 1");
+                                    var a2=prompt("Enter string 2");
+                                    if(a1>a2){
+                                           alert(a1 +" is greater than "+a2);
+                                    }
+                                    else{
+                                        alert(a1 +" is less than "+a2);    
+                                    }                  
+                                    </code>
+                                 </pre>
+                                    <!--q15-->
+                               <p> Q 15.Write a program to take password as an input from user. The
+                                    password must qualify these requirements: <br>
+                                        a. It should contain alphabets and numbers  <br>
+                                        b. It should not start with a number  <br> 
+                                        c. It must at least 6 characters long  <br>
+                                       If the password does not meet above requirements,
+                                    prompt the user to enter a valid password.
+                                    For character codes of a-z, A-Z &amp; 0-9, refer to ASCII
+                                    table at the end of this document.</p>
+                                 <pre>
+                                     <code>
+                                    var username=prompt("Enter your name :")
+                                    var len=username.length;
+                                    var count1=0,count2=0;
+                                    var counter=0;
+                                    var flag=false;
+                                    for(var i=0;i&lt;len;i++){
+                                         if(len>6){
+                                                if(username.charCodeAt(0)>=48 &amp;&amp; username.charCodeAt(0)&lt;=57){                                                                             
+                                                        alert("please enter a valid password");
+                                                        counter++;
+                                                        break;
+                                                }
+                                                else{
+                                                        if((username.charCodeAt(i)>=65 &amp;&amp; username.charCodeAt(i)&lt;=90) || (username.charCodeAt(i)>=97 &amp;&amp; username.charCodeAt(i)&lt;=122)){
+                                                                 count1++;
+                                                                 
+                                                                     
+                                                          }
+                                                         else if(username.charCodeAt(i)&gt;=48 &amp;&amp; username.charCodeAt(i)&lt;=57){
+                                                            count2++;
+                                                           
+                                                               flag=true;
+                                                          }  
+                                                            
+                                            
+                                                }
+                                             }
+                                            else{
+                                                   alert("Please enter a valid password");
+                                                   counter++;
+                                                   break;
+                                                 }
+                                                
+                                            }
+                                            if(count1 >=1  &amp;&amp; count2>=1){
+                                                alert("Password is successfully changed");
+                                            
+                                            }
+                                            if(flag==false &amp;&amp; counter==0){
+                                                alert("Please enter a valid password");
+                                                alert("alert3");
+                                            }
+                                            
+                                                              
+                                    </code>
+                                 </pre>
+                                 
+
+                        </div>
+                    </div>
+              </div>
+              <div class="card">
+                    <div class="card-header">
+                         <a href="#chp26" data-toggle="collapse" class="card-link"> 
+                              <h1 class="text-primary h1-jump">Chapter : 26 to 34</h1>
+                         </a>
+                     </div>
+                     <div id="chp26" class="collapse" data-parent="#accordion">
+                           <div class="card-body">
+                                <!--q1-->
+                                <p> Q 1.Write a program that takes a positive integer from user and
+                                        display the following in your browser. <br>
+                                        a. number <br>
+                                        b. round off value of the  <br>
+                                        c. floor value of the number <br>
+                                        d. ceil value of the number</p>
+                                     <pre>
+                                         <code>
+                                        var num=prompt("Enter a number :");
+                                        alert("Number is :" +num);
+                                        alert("Round of value is :" +Math.round(num));
+                                        alert("Floor of a value is :" +Math.floor(num));
+                                        alert("ceil of a value  is :" +Math.ceil(num));
+                                        </code>
+                                     </pre>
+                                     <!--q2-->
+                                <p> Q 2.Write a program that displays the absolute value of a number.
+                                        E.g. absolute value of -4 is 4 and absolute value of 5 is 5 </p>
+                                     <pre>
+                                         <code>
+                                        var num=prompt("Enter a number either positive or negative :");
+                                        num=Number(num);
+                                        if(num &lt; 0){
+                                           var num1=num*-1;
+                                        }    
+                                        alert("The absolute value of "+num+" is "+num1);
+                                        </code>
+                                     </pre>
+                                     <!--q3-->
+                                <p> Q 3.Write a program that simulates a dice using random() method
+                                    of JS Math class. Display the value of dice in your browser.</p>
+                                     <pre>
+                                         <code>
+                                        var random_num=Math.random();
+                                        alert(Math.floor((random_num*6)+1));
+                                            
+                                        </code>
+                                     </pre>
+                                     <!--q4-->
+                                <p> Q 4.Write a program that simulates a coin toss using random()
+                                    method of JS Math class. Display the value of coin in your
+                                    browser.</p>
+                                     <pre>
+                                         <code>
+                                        var random_num=Math.random();
+                                        var r=(random_num*2)+1;
+                                        var a=Math.floor(r);
+                                        if(a==1){
+                                                alert("random coin value is : Head");
+                                        }
+                                            
+                                        else if(a==2){
+                                                alert("random coin value is : Tail");
+                                        }    
+                                        </code>
+                                     </pre>
+                                          <!--q5-->
+                                <p> Q 5.Write a program that stores a random secret number from 1
+                                    to 10 in a variable. Ask the user to input a number between 1
+                                    and 10. If the user input equals the secret number, congratulate
+                                    the user.</p>
+                                     <pre>
+                                         <code>
+                                        var r_num=Math.random();
+                                        var a=(r_num*10)+1;
+                                        var b=Math.floor(a);
+                                        var count_min=2;
+                                        var user=prompt("Enter a numbere between 1-10 :");
+                                        user=parseInt(user);
+                                        for(var i=0;i&lt;=count_min+2;i++){
+                                            if(b==user){
+                                                  alert("Congrats You found a number !!!");
+                                                   break
+                                            }
+                                            else if(count_min>0){
+                                                    alert("Sorry u got it wrong ... \nYou have "+count_min+" remaining");
+                                                    var user=prompt("Enter a numbere between 1-10 :");
+                                                    user=parseInt(user);
+                                                    count_min--;
+                                            }
+                                            else{
+                                                   alert("You lose ");
+                                            }
+                                                
+                                        }
+                                        </code>
+                                     </pre>
+                                      <!--q6-->
+                                <p> Q 6.Write a program that displays current date and time in your
+                                    browser.</p>
+                                 <pre>
+                                     <code>
+                                        var date=new Date();
+                                        alert(date)
+                                    </code>
+                                 </pre>
+                                       <!--q7-->
+                                <p> Q 7.Write a program that shows the message “First fifteen days of the
+                                    month” if the date is less than 16th of the month else shows “Last
+                                    days of the month”.</p>
+                                 <pre>
+                                     <code>
+                                        var date=new Date();
+                                        var dat=date.getDate();
+                                        if(dat&lt;=15){
+                                              alert("First fifteen days of the month");
+                                        }
+                                        else{
+                                               alert("Last days of month")
+                                        }
+                                    </code>
+                                 </pre>
+                                        <!--q8-->
+                                <p> Q 8.Write a program that determines the minutes since midnight, Jan.
+                                    1, 1970 and assigns it to a variable that hasn't been declared
+                                    beforehand. Use any variable you like to represent the Date object.</p>
+                                 <pre>
+                                     <code>
+                                        var date=new Date();
+                                        var dat=date.getTime();
+                                        alert("Current Time"+date);
+                                        alert("Miliseconds since january 1,1970 :"+dat);
+                                        alert("Minutes since january 1,1970 :"+dat/(60*60));
+                                        
+                                                
+                                    </code>
+                                 </pre>
+                                           <!--q9-->
+                                <p> Q 9.Write a program to ask the user about his age. Calculate and
+                                    show his birth year in your browser.</p>
+                                 <pre>
+                                     <code>
+                                        var age=prompt("Enter your age :");
+                                        age=parseInt(age);
+                                        var birth_day_year=2018-age;
+                                        alert("Your age is :"+age);
+                                        alert("Your Birthday year is : "+birth_day_year)
+                                                
+                                    </code>
+                                 </pre>
+                                             <!--q10-->
+                                <p> Q 10.Write a program to generate your K-Electric bill in your
+                                    browser. All the amounts should be rounded off to 2 decimal
+                                    places. Display the following fields: <br>
+                                    a. Customer Name <br>
+                                    b. Current Month <br>
+                                    c. Number of units <br>
+                                    d. Charges per unit <br>
+                                    e. Net Amount Payable (within Due Date) <br>
+                                    f. Late Payment Surcharge <br>
+                                    g. Gross Amount Payable (after Due Date)</p>
+                                 <pre>
+                                     <code>
+                                        var name=prompt("Enter your name :");
+                                        var month=prompt("Enter recent Month :");
+                                        var units=prompt("Enter Number of units :");
+                                        units=Number(units);
+                                        var charges=prompt("Enter Charges per unit :");
+                                        charges=Number(charges);
+                                        var amount=units *charges;
+                                        var late=500;
+                                        var lamount=late+amount;
+                                        alert("Customer Name :"+name);
+                                        alert("Month :"+month);
+                                        alert("Number of units :" +units);
+                                        alert("Charges per unit :"+charges);
+                                        alert("Net Amount payable (within Due Date) :" +amount);
+                                        alert("Late charges :"+late);
+                                        alert("Gross Amount payable (after Due Date) : "+lamount)        
+                                    </code>
+                                 </pre>
+                            </div>
+                     </div>
+               </div> 
+                <div class="card">
+                    <div class="card-header">
+                         <a href="#chp35" data-toggle="collapse" class="card-link"> 
+                              <h1 class="text-primary h1-jump">Chapter : 35 to 38</h1>
+                         </a>
+                     </div>
+                     <div id="chp35" class="collapse" data-parent="#accordion">
+                           <div class="card-body">
+                                    <!--q1-->
+                                    <p> Q 1.Create a block of code that you can use several times.</p>
+                                     <pre>
+                                         <code>
+                                        var m=7;
+                                        function fac(n){
+                                        var count=1;
+                                        for(var i=1;i&lt;=n;i++){
+                                             count=count*i;
+                                        }
+                                        alert(count);
+                                        }
+                                        fac(m);                            
+                                        </code>
+                                     </pre> 
+                                      <!--q2-->
+                                    <p> Q 2.Write a Function that displays a current date and time in your browser.</p>
+                                    <pre>
+                                        <code>
+                                        function currentTime(){
+                                           var date=new Date()
+                                           var c_date=date.getDate();
+                                           var c_time=date.getTime();
+                                           alert(c_date);
+                                           alert(c_time);
+                                        }            
+                                        </code>
+                                    </pre>
+                                        <!--q3-->
+                                    <p> Q 3.Write a function that takes first and last name and then greets the user using full name.</p>
+                                    <pre>
+                                        <code>
+                                        var fname="noman";
+                                        var lname="ahmed";
+                                        function fullName(fname,lname){
+                                                var full=fname+" "+lname;
+                                                alert("Your full Name is "+full);
+                                        }
+                                        fullName(fname,lname);             
+                                        </code>
+                                    </pre>
+                                     <!--q4-->
+                                     <p> Q 4.Write a function that takes three inputs bt the user num1,num2 and operation you want to perform.</p>
+                                     <pre>
+                                         <code>
+                                        var num1=prompt("Enter first number :");
+                                        var num2=prompt("Enter a second number :");
+                                        var ope=prompt("Enter operator :");
+                                        num1=Number(num1);
+                                        num2=Number(num2);
+                                        function calculator(num1,num2,ope){
+                                                var result;    
+                                                switch(ope){
+                                                        case '+':
+                                                            result=num1+num2;
+                                                        break;
+                                                        case '-':
+                                                            result=num1-num2;
+                                                        break;
+                                                        case '*':
+                                                            result=num1*num2;
+                                                        break;
+                                                        case '/':
+                                                            result=num1/num2;
+                                                        break;
+                                                        case '%':
+                                                            result=num1%num2;
+                                                        break;
+                                                }
+                                                return result;
+                                        }
+                                        alert("Your answer is : "+calculator(num1,num2,ope)); 
+                                        </code>
+                                     </pre>      
+                                        <!--q4-->
+                                        <p> Q 4.Write a function that accepts any number as argument and find the largest number .</p>
+                                        <pre>
+                                            <code>
+                                        var number=[11,4,109,-2,55,9,0];
+                                        function largest(number){
+                                        var max=1;
+                                        for(var i=0;i&lt;number.length;i++){
+                                                if(max&lt;number[i]){
+                                                        max=number[i];
+                                                }
+                                                        
+                                        }
+                                                alert(max);
+                                        }
+                                        largest(number);    
+                                            </code>
+                                        </pre>
+                                         <!--q5-->
+                                         <p> Q 5.Write a function that receive an array and returns a sorted array .</p>
+                                         <pre>
+                                             <code>
+                                        var number=[11,4,109,-2,55,9,0];
+                                        function sorting(number){
+                                        var temp;
+                                        for(var i=0;i&lt;number.length;i++){
+                                                for(var j=i+1;j&lt;number.length;j++){
+                                                        if(number[i]&gt;number[j]){
+                                                              temp=number[j];
+                                                              number[j]=number[i];
+                                                              number[i]=temp;
+                                                        }
+                                                        
+                                                        }
+                                                    }
+                                                    return number;
+                                                }
+                                        alert("Sorted array : "+sorting(number));  
+                                      </code>
+                                         </pre>
+                                             <!--q6-->
+                                        <p> Q 6.Write a function that takes an array and sum its element and  return the sum  .</p>
+                                        <pre>
+                                                 <code>
+                                            var number=[11,4,109,-2,55,9,0];
+                                            function sorting(number){
+                                            var temp;
+                                            for(var i=0;i&lt;number.length;i++){
+                                                    for(var j=i+1;j&lt;number.length;j++){
+                                                            if(number[i]&gt;number[j]){
+                                                                  temp=number[j];
+                                                                  number[j]=number[i];
+                                                                  number[i]=temp;
+                                                            }
+                                                            
+                                                            }
+                                                        }
+                                                        return number;
+                                                    }
+                                            alert("Sorted array : "+sorting(number));  
+                                          </code>
+                                             </pre>
+                                             <!--q7-->
+                                        <p> Q 7.Writw a javascript function that accept a stringas a parameter and find the longest word within a string .</p>
+                                        <pre>
+                                                 <code>
+                                            var st="Web development tutorials";
+
+                                            function largest_string(st){
+                                            var str=st+" ";
+                                            var slice_new="";
+                                            var slice_old="";
+                                            var count=0;
+                                            var max="";
+                                            for(var i=0;i&lt;str.length;i++){
+                                                         if(str[i]===" ")
+                                                          {
+                                                            
+                                                            slice_new=str.slice(i-count,i);
+                                                              
+                                                                   if(slice_new.length>max.length  ){
+                                                                     max=slice_new;            
+                                                                   }
+                                                            
+                                                            
+                                                            count=0;
+                                                          }
+                                                          count++;
+                                            }
+                                            alert("Largest word in the string is :"+max);
+                                            }
+                                            largest_string(st);  
+                                          </code>
+                                             </pre>
+                                               <!--q8-->
+                                        <p> Q 8.Write a function that accepts stirng as aparameter and counts the number of vowel within a string.</p>
+                                        <pre>
+                                                 <code>
+                                            var str="The quick brown Fox";
+                                            str=str.toLowerCase();
+                                            function check_vowel(str){
+                                                    var count=0;
+                                                    for(var i=0;i&lt;str.length;i++){
+                                                          if(str[i]==="a" || str[i]==="e" || str[i]==="i" || str[i]==="o" || str[i]==="u"){
+                                                            count++;
+                                                           }
+                                                    }
+                                            alert("The number of vowels within a string is : "+count);
+                                            }
+                                            check_vowel(str);     
+                                          </code>
+                                             </pre>
+                                         
+                                     
+                           </div>
+                     </div>
+               </div> 
+                <div class="card">
+                    <div class="card-header">
+                         <a href="#chp39" data-toggle="collapse" class="card-link"> 
+                              <h1 class="text-primary h1-jump">Chapter : 39 to 42</h1>
+                         </a>
+                     </div>
+                     <div id="chp39" class="collapse" data-parent="#accordion">
+                           <div class="card-body">
+                                       <!--q1-->
+                                       <p> Q 1.Write a switch statement with the following condition:
+                                        If the variable age is greater than 18, output "Old enough",
+                                        otherwise output "Too young"..</p>
+                                       <pre>
+                                                <code>
+                                            var age=prompt("Entere your age : ");
+                                            switch(age>18){
+                                                case true:
+                                                    alert("Old enough");
+                                                    break;
+                                                case false:
+                                                    alert("too young");
+                                                    break;  
+                                            }
+                                                </code>
+                                            </pre>
+                                            <!--q2-->
+                                       <p> Q 2.Write a program to check whether the given input number is
+                                        divisible by 3 or not by using Switch Case statements. Show a
+                                        message “Number is not divisible by 3” or “Number is divisible
+                                        by 3”.</p>
+                                       <pre>
+                                                <code>
+                                            var num=prompt("Entere a number : ");
+                                            switch(num%3){
+                                                    case 0:
+                                                      alert("Number is divisible by 3");
+                                                         break;
+                                                    default:
+                                                         alert("Number is not divisible by 3");  
+                                            }
+                                                </code>
+                                            </pre>
+                                           <!--q3-->
+                                       <p> Q 3.The getDay() method returns the weekday as a number
+                                        between 0 and 6. (Sunday=0, Monday=1, Tuesday=2 …).
+                                        Use the weekday number to calculate weekday name..</p>
+                                       <pre>
+                                                <code>
+                                            var date=new Date();
+                                            var day=date.getDay();
+                                            switch(day){
+                                                    case 0:
+                                                    alert("Its Sunday !!!");
+                                                    break;
+                                                    case 1:
+                                                    alert("Its Monday !!!");
+                                                    break;
+                                                    case 2:
+                                                    alert("Its Tuesday !!!");
+                                                    break;
+                                                    case 3:
+                                                    alert("Its Wednesday !!!");
+                                                    break;
+                                                    case 4:
+                                                    alert("Its Thursday !!!");
+                                                    break;
+                                                    case 5:
+                                                    alert("Its Firday !!!");
+                                                    break;
+                                                    case 6:
+                                                    alert("Its Saturday !!!");
+                                                    break;
+                                                          
+                                            }             
+                                                </code>
+                                            </pre>
+                                            <!--q4-->
+                                       <p> Q 4.The getDay() method returns the weekday as a number
+                                        between 0 and 6. (Sunday=0, Monday=1, Tuesday=2 ...).
+                                        If today is neither Saturday (6) nor Sunday (0), write a default
+                                        message:</p>
+                                       <pre>
+                                                <code>
+                                            var date=new Date();
+                                            var day=date.getDay();
+                                            switch(day){
+                                                    case 0:
+                                                    alert("Its Its Fun Day !!!");
+                                                    break;
+                                                    case 6:
+                                                    alert("Its Fun Day !!!");
+                                                    break;
+                                                    default:
+                                                    alert("Its not a Fun Day");
+                                                          
+                                            }
+                                                </code>
+                                            </pre>
+                                              <!--q5-->
+                                       <p> Q 5.Write a function that displays the marks range against a
+                                        particular grade. For example, if grade is “B”, then print Marks [
+                                        >= 60 and &lt;70 ]</p>
+                                       <pre>
+                                                <code>
+                                            var grade=prompt("Enter Your Grade :");
+                                            switch(grade){
+                                                    case "A":
+                                                    alert("Marks [ >= 80 and &lt;100 ]");
+                                                    break;
+                                                    case "B":
+                                                    alert("Marks [ >= 70 and &lt;80 ]");
+                                                    break;
+                                                    case "C":
+                                                    alert("Marks [ >= 60 and &lt;70 ]");
+                                                    break;
+                                                    case "D":
+                                                    alert("Marks [ >= 50 and &lt;60 ]");
+                                                    break;
+                                                    case "F":
+                                                    alert("Marks [ >= 0 and &lt;50 ]");
+                                                    break;
+                                                    default:
+                                                    alert("Invalid Grade");
+                                            }
+                                                </code>
+                                            </pre>
+                                            <!--q6-->
+                                       <p> Q 6.Use a conditional (ternary) operator for this exercise:
+                                        If the variable age is a value below 18, the value of the variable
+                                        voteable should be "Too young",
+                                        otherwise the value of voteable should be "Old enough".</p>
+                                       <pre>
+                                                <code>
+                                            var age=prompt("Enter Your age :");
+                                            (age>18)?alert("Old enough"):alert("Too young");
+                                                </code>
+                                            </pre>
+                                               <!--q7-->
+                                       <p> Q 7.Write a program to display the message “Hello World” 5
+                                        times in your browser.</p>
+                                       <pre>
+                                                <code>
+                                            var i=0;
+                                            while(i&lt;5){
+                                                    alert("Hello World");
+                                                    i++;
+                                            }
+                                                    
+                                                </code>
+                                            </pre>
+                                             <!--q8-->
+                                       <p> Q 8.You have an array
+                                        A = [“Nokia”, “Samsung”, “Apple”, “Sony”, “Huawei”]
+                                        Write each element on new line.</p>
+                                       <pre>
+                                                <code>
+                                            var arra=["Nokia","Samsung","Apple","Sony","Infinix"];
+                                            i=0;
+                                            while(i&lt;arra.length){
+                                                alert(arra[i]);
+                                                i++;
+                                            }        
+                                                </code>
+                                            </pre>
+                                             <!--q9-->
+                                       <p> Q 9.Write a program to print items of the following array:
+                                        fruits = [“apple”, “banana”, “mango”, “orange”, “strawberry”]</p>
+                                       <pre>
+                                                <code>
+                                            var fruits = ["apple", "banana", "mango", "orange", "strawberry"]
+                                            var i=0;
+                                            while(i&lt;fruits.length){
+                                                    alert("Element at "+i+" index is "+ fruits[i]);
+                                                    i++;
+                                            } 
+                                                </code>
+                                            </pre>
+                                            <!--q10-->
+                                       <p> Q 10.Write a program that prints number from start of the array
+                                        to desired stop value. Given array: <br>
+                                        var scores = [12, 45, 3, 22, 34, 50]; <br>
+                                        E.g. if user gives 3 as input value print 12, 45, 3 <br>
+                                        if user gives 34 as input value print 12, 45, 3, 22, 34</p>
+                                       <pre>
+                                                <code>
+                                            var arra=[12,45,3,22,34,50];
+                                            var stop=prompt("Enter a value you want to stop");
+                                            var i=0;
+                                            while(i&lt;arra.length){
+                                                alert(arra[i]);
+                                                if(stop==arra[i])
+                                                {
+                                                    break;
+                                                }  
+                                                i++;
+                                            }
+                                                </code>
+                                            </pre>
+                                            <!--q11-->
+                                       <p> Q 11.Write a program to create the following patterns in your
+                                        browser. Take number of lines as an input.
+                                        </p>
+                                       <pre>
+                                                <code>
+                                                     pattern 1
+
+                                                         *****
+                                                         *****
+                                                         *****
+                                                         *****
+                                                         *****
+                                                    for(var i=0;i&lt;5;i++){
+                                                        for(var j=0;j&lt;5;j++){
+                                                            document.write("*");
+                                                        }
+                                                        document.write("&lt;br/>");
+                                                        
+                                                    }
+                                                    
+                                                     pattern 2
+                                                    
+                                                        *
+                                                        **
+                                                        ***
+                                                        ****
+                                                        *****
+                                                    for(var i=0;i&lt;=5;i++){
+                                                      for(var j=0;j&lt;=i;j++){
+                                                          document.write("*");
+                                                      }
+                                                      document.write("&lt;br/>");
+                                                      
+                                                    }
+                                                     pattern 3
+                                                    
+                                                        *****
+                                                        ****
+                                                        ***
+                                                        **
+                                                        *
+                                                    for(var i=0;i&lt;5;i++){
+                                                      for(var j=5;j>i;j--){
+                                                          document.write("*");
+                                                      }
+                                                      document.write("&lt;br/>");
+                                                      
+                                                    }
+                                                </code>
+                                            </pre>
+                           </div>
+                     </div>
+               </div>
+         </div>
+    </div>
+
+    
+    <script src="as.js"></script>
+</body>
+</html>
